@@ -65,7 +65,7 @@ jobs:
       run: docker save banking-app:latest | gzip > banking-app.tar.gz
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: banking-app-image
         path: banking-app.tar.gz
